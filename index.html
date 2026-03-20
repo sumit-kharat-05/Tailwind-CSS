@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" id="root" class="">
+<head>
+  <link href="output.css" rel="stylesheet">
+  <title>Tailwind CSS</title>
+  <script>
+    function changeMode() {
+      let el=document.getElementById('root');
+      if (el.className === "dark") {
+       document.getElementById('light');
+       document.getElementById('select-mode').innerText="Dark Mode";
+      } else {
+         document.getElementById('light');
+       document.getElementById('select-mode').innerText="Light Mode";
+      }
+    }
+  </script>
+</head>
+<body>
+
+    <!--Dark Mode-->
+ <button id="select-mode" class="bg-gray-400 border-e-blue-400 m-10 p-2 rounded hover:bg-gray-700 align-top" 
+ onclick="changeMode()">Dark Mode</button><br><br>
+
+  <!--Navigation Bar-->
+ <ul class="bg-black text-white m-0 flex [&>*] :flex">
+<li > <a class="p-4 hover:bg-zinc-900" href="#">Home</a></li>
+<li > <a class="p-4 hover:bg-zinc-900" href="#">About</a></li>
+<li > <a class="p-4 hover:bg-zinc-900" href="#">Services</a></li>
+<li > <a class="p-4 hover:bg-zinc-900" href="#">Contact</a></li>
+ </ul><br><br>
+
+   <!--Text Color-->
+ <p class=" text-red-500">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-100">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-200">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-300">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-400">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-500">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-600">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-700">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-800">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-900">Hi I Am Learning Tailwind CSS</p>
+ <p class=" text-red-950">Hi I Am Learning Tailwind CSS</p><br><br>
+ 
+   <!--Background Color-->
+ <p class=" bg-blue-50"> Tailwind CSS</p>
+ <p class=" bg-blue-100">Tailwind CSS</p>
+ <p class=" bg-blue-200">Tailwind CSS</p>
+ <p class=" bg-blue-300">Tailwind CSS</p>
+ <p class=" bg-blue-400">Tailwind CSS</p>
+ <p class=" bg-blue-500">Tailwind CSS</p>
+ <p class=" bg-blue-600">Tailwind CSS</p>
+ <p class=" bg-blue-700">Tailwind CSS</p>
+ <p class=" bg-blue-800">Tailwind CSS</p>
+ <p class=" bg-blue-900">Tailwind CSS</p>
+ <p class=" bg-blue-950">Tailwind CSS</p><br><br>
+   
+   <!--Borders-->
+  <p class=" border-green-50 border-4">  CSS</p>
+ <p class=" border-green-100 border-4"> CSS</p>
+ <p class=" border-green-200 border-4"> CSS</p>
+ <p class=" border-green-300 border-4"> CSS</p>
+ <p class=" border-green-400 border-4"> CSS</p>
+ <p class=" border-green-500 border-4"> CSS</p>
+ <p class=" border-green-600 border-4"> CSS</p>
+ <p class=" border-green-700 border-4"> CSS</p>
+ <p class=" border-green-800 border-4"> CSS</p>
+ <p class=" border-green-900 border-4"> CSS</p>
+ <p class=" border-green-950 border-4"> CSS</p><br><br>
+
+   <!--padding & Margin-->
+ <div class="bg-red-700 text-white p-5 m-5">SUMIT KHARAT</div>
+
+  <div class="bg-blue-700 text-white p-5 m-5">SUMIT </div><br><br>
+
+    <!--Width-->
+  <div class="bg-orange-400 max-block-96">
+    JAY SHREE RAM
+  </div><br><br>
+    <div class="bg-orange-600 min-w-auto">
+    JAY SHREE RAM
+  </div><br><br>
+    <div class="bg-orange-700 min-w-1/2">
+    JAY SHREE RAM
+  </div><br><br>
+    <div class="bg-orange-800 w-xs">
+    JAY SHREE RAM
+  </div><br><br>
+    <div class="bg-orange-900 w-2xl">
+    JAY SHREE RAM
+  </div><br><br>
+
+    <!--Height-->
+
+    <div class="bg-purple-400 h-36"> JAY SHREE RAM</div>
+    <div class="bg-purple-500 h-auto"> JAY SHREE RAM</div>
+    <div class="bg-purple-600 h-1/2"> JAY SHREE RAM</div>
+    <div class="bg-purple-700 h-1/4"> JAY SHREE RAM</div>
+    <div class="bg-purple-800 min-h-0"> JAY SHREE RAM</div>
+    <div class="bg-purple-900 max-h-full"> JAY SHREE RAM</div><br><br>
+    
+    <!--sizes-->
+    <div class="bg-mist-500 size-24"> JAY SHREE RAM</div><br><br>
+    <div class="bg-mist-800 size-28"> JAY SHREE RAM</div><br>
+    <div class="bg-mist-900 size-40"> JAY SHREE RAM</div><br><br>
+     
+    <!--positioning-->
+    <!--<div class="bg-yellow-500 size-24 absolute top-0 left-0"> JAY SHREE RAM</div>
+    <div class="bg-yellow-600 size-24 absolute top-0 right-0"> JAY SHREE RAM</div>
+      <div class="bg-yellow-500 size-24 relative bottom-0 left-0"> JAY SHREE RAM</div>
+    <div class="bg-yellow-600 size-24 inset-36 absolute bottom-0 right-0"> JAY SHREE RAM</div><br><br>-->
+    
+    <!--containers-->
+    <div class="bg-amber-300 container mx-auto ">container class</div><br><br>
+
+    <!--backgrounds-->
+    <div class="bg-red-500 h-96" style="background-image: url(shivaji\ maharaj.jpg) bg-center bg-cover";></div><br><br>
+    </div><br><br>
+
+    <!--gradients-->
+    <div class="gradient bg-linear-to-r to-yellow-600 from-pink-800 size-96">
+    </div><br><br>
+
+    <!--shadows-->
+    <div class="size-96 m-32 shadow-orange-500 shadow-2xl"></div>
+   
+    <!--Filters On Image-->
+    <img src="https://wallpapercave.com/wp/p3HjAFU.jpg" height="500px" width="500px" ><br><br>
+
+       <img class="blur-1xl" src="https://wallpapercave.com/wp/p3HjAFU.jpg" height="500px" width="500px" ><br><br>
+
+          <img class="brightness-50"  src="https://wallpapercave.com/wp/p3HjAFU.jpg" height="500px" width="500px" ><br><br>
+
+             <img class="contrast-200" src="https://wallpapercave.com/wp/p3HjAFU.jpg" height="500px" width="500px" ><br><br>
+
+                <img class="grayscale-50" src="https://wallpapercave.com/wp/p3HjAFU.jpg" height="500px" width="500px" ><br><br>
+
+                   <img class="hue-rotate-60" src="https://wallpapercave.com/wp/p3HjAFU.jpg" height="500px" width="500px" ><br><br>
+
+                   
+    <!--Buttons-->
+    <button class="bg-gray-500 rounded-md p-2 m-6 hover:bg-rose-700 ">Login</button>
+     <button class="bg-gray-800 rounded-md p-2 m-6 focus:bg-orange-600">Login</button>
+       <button class="bg-gray-900 rounded-md p-2 m-6 active:bg-purple-800">Login</button>
+
+
+  <!--Media Query-->
+  <div class="bg-green-500 text-white p-5 m-0 sm:bg-red-700 md:bg-blue-700 lg:bg-yellow-700">
+    Responsive Design
+  </div><br>
+<h1 class="text-3xl sm:text-6xl md:text-7xl lg:text-5xl xl:text-3xl 2xl:text-2xl "> Responsive Design </h1><br><br>
+
+<!--Column For Text-->
+<div class="columns-2">
+  <h1 class="bg-red-500">Heading 1</h1>
+    <h1 class="bg-green-600">Heading 1</h1>
+      <h1 class="bg-blue-700">Heading 1</h1>
+        <h1 class="bg-yellow-800">Heading 1</h1>
+          <h1 class="bg-pink-900">Heading 1</h1>
+</div><br><br>
+
+<!--Column For Images-->
+<!--<div class="columns-4 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-4 2xl:columns-5">
+<img src="https://i.pinimg.com/736x/fd/89/cc/fd89cce0b421b6b4d37959ffc4422efc.jpg" >
+<img src="https://i.pinimg.com/736x/fd/89/cc/fd89cce0b421b6b4d37959ffc4422efc.jpg" >
+<img src="https://i.pinimg.com/736x/fd/89/cc/fd89cce0b421b6b4d37959ffc4422efc.jpg" >
+<img src="https://i.pinimg.com/736x/fd/89/cc/fd89cce0b421b6b4d37959ffc4422efc.jpg">
+<img src="https://i.pinimg.com/736x/fd/89/cc/fd89cce0b421b6b4d37959ffc4422efc.jpg" >
+</div><br><br>>-->
+
+<!--Column For Images-->
+<div class="columns-lg">
+<img src="https://wallpapers.com/images/hd/1080p-nature-background-nfkrrkh7da3eonyn.jpg" >
+<img src="https://wallpapers.com/images/hd/1080p-nature-background-nfkrrkh7da3eonyn.jpg" >
+<img src="https://wallpapers.com/images/hd/1080p-nature-background-nfkrrkh7da3eonyn.jpg" >
+<img src="https://wallpapers.com/images/hd/1080p-nature-background-nfkrrkh7da3eonyn.jpg">
+<img src="https://wallpapers.com/images/hd/1080p-nature-background-nfkrrkh7da3eonyn.jpg" >
+</div><br><br>
+
+<!--Flexbox-->
+<div class=" size-full flex flex-row items-center justify-between flex-wrap content-start"> 
+<div class="bg-red-500 size-32"></div>
+<div class="bg-orange-500 size-32"></div>
+<div class="bg-yellow-500 size-32"></div>
+<div class="bg-green-500 size-32"></div>
+</div><br><br>
+
+<!--Grid-->
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div>
+  <div class="bg-pink-700 border border:bg-red-200 p-10 gap-2"></div><br><br>
+
+  <!--transition & transform-->
+  <button class="bg-red-400 rounded text-white  p-2 m-24 hover:bg-red-900 transition duration-1000">
+    Login
+  </button>
+    <button class="bg-green-400 rounded text-white   p-2 m-24 hover:opacity-50 transition duration-1000">
+    Login
+  </button>
+     <button class="bg-orange-400 rounded text-white   p-2 m-24 hover:rotate-90 transition-transform duration-1000">
+    Login
+  </button>
+     <button class="bg-pink-400 rounded text-white   p-2 m-24 hover:scale-x-110 transition-transform duration-1000">
+    Login
+  </button><br><br>
+  <img src="https://getwallpapers.com/wallpaper/full/0/f/8/292170.jpg" class=" h-96 w-2xl m-20 hover:rotate-90 hover:scale-125 transition-transform duration-1000" >
+</div><br><br>
+
+
+<!--Animations-->
+
+  <div class="bg-red-500 size-32 m-20 rounded-full animate-pulse"></div><br>
+  <div class="bg-green-500 size-32 m-20 animate-bounce"></div><br>
+  <div class="bg-blue-500 size-32 m-20 animate-spin"></div><br>
+
+
+  <!--Breakpoints-->
+  <div class="sm:bg-amber-600 md:bg-red-600 lg:bg-pink-600 xl:bg-orange-600 2xl:bg-green-600 text-white p-1 m-0">
+   SUMIT KHARAT
+  </div><br><br>
+
+
+  <!--Margin & Padding-->
+  <div class="bg-gray-500 text-white p-5 ">SUMIT KHARAT</div><br>
+
+    <div class="bg-gray-500 text-white m-5 ">SUMIT KHARAT</div><br>
+
+      <div class="bg-gray-500 text-white h-5 ">SUMIT KHARAT</div><br>
+
+        <div class="bg-gray-500 text-white w-5 ">SUMIT KHARAT</div><br>
+
+          <div class="bg-gray-500 text-white size-5 ">SUMIT KHARAT</div><br><br>
+
+
+  <!--Custom Properties-->
+  <div>
+    <button class="btn-primary">Login</button>
+    <button class="btn-primary">Click Me</button>
+    
+  </div><br><br>
+<div class="m-10 p-2">
+  <button class="btn-primaryy">primary</button>
+  <button class="btn-seconadary">secondary</button>
+  <button class="btn-success">success</button>
+  <button class="btn-danger">danger</button>
+  <button class="btn-warning">warning</button>
+  <button class="btn-info">info</button>
+  <button class="btn-light">light</button>
+  <button class="btn-dark">dark</button>
+</div>
+
+
+<!--Border-->
+<div class="m-10 p-2 size-64 border-4 border-red-600">Border</div>
+<div class="m-10 p-2 size-64 border-4 border-t-red-500 border-b-green-600 border-r-yellow-600 border-l-pink-700">Border</div>
+<div class="m-10 p-2 size-64 border-4 border-red-600 rounded-full">Border</div>
+<div class="m-10 p-2 size-64 border-4 border-red-600 rounded-t-full">Border</div>
+<div class="m-10 p-2 size-64 border-4 border-red-600 rounded-b-full">Border</div>
+<div class="m-10 p-2 size-64 border-4 border-red-600 rounded-l-full">Border</div>
+<div class="m-10 p-2 size-64 border-4 border-red-600 border-dotted">Border</div><br><br>
+  
+
+<!--Fonts-->
+<p>SUMIT KHARAT</p>
+<p class="font-serif">SUMIT KHARAT</p>
+<p class="font-mono">SUMIT KHARAT</p><br>
+
+<p class="text-2xl font-extralight">SUMIT KHARAT</p>
+<p class="text- font-light">SUMIT KHARAT</p>
+<p class="text-4xl font-normal">SUMIT KHARAT</p>
+<p class="text-5xl font-bold">SUMIT KHARAT</p>
+<p class="text-6xl font-semibold">SUMIT KHARAT</p>
+<p class="text-7xl font-extrabold">SUMIT KHARAT</p><br>
+
+<p class="text-2xl text-red-500">SUMIT KHARAT</p>
+<p class="text-2xl hover:text-green-500"> SUMIT KHARAT</p><br><br>
+
+
+<!--Photo Gallery-->
+<div class=" m-10 mx-auto mt-12 size- flex flex-row flex-wrap gap-2  ">
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+<img class="img-gallery" src="https://static.vecteezy.com/system/resources/thumbnails/071/371/504/small/nature-background-nature-wallpaper-sunbeams-illuminate-a-vibrant-green-forest-floor-with-fallen-leaves-and-moss-covered-logs-photo.jpg" >
+</div><br><br>
+
+
+<!--DropDown-->
+<div class="group m-10">
+<div class="text-pink-500 hover:text-orange-500 cursor pointer">
+City List
+</div>
+<div class="hidden group-hover:block">
+  <ul>
+<a href="#">Mumbai</a><br>
+<a href="#">Pune</a><br>
+<a href="#">Nagpur</a><br>
+<a href="#">Amaravati</a><br>
+<a href="#">Gondia</a><br>
+</ul>
+</div>
+</div><br><br>
+
+
+
+
+
+
+
+</body> 
+</html>
